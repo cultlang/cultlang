@@ -1,0 +1,36 @@
+[submodule "craft"]
+	path = craft
+	url = git@github.com:cultlang/craft.git
+[submodule "sqlite3"]
+	path = sqlite3
+	url = git@github.com:cultlang/sqlite3.git
+[submodule "uv"]
+	path = uv
+	url = git@github.com:cultlang/uv.git
+[submodule "zmq"]
+	path = zmq
+	url = git@github.com:cultlang/zmq.git
+[submodule "sodium"]
+	path = sodium
+	url = git@github.com:cultlang/sodium.git
+[submodule "http"]
+	path = http
+	url = git@github.com:cultlang/http.git
+[submodule "builtinbase"]
+	path = builtinbase
+	url = git@github.com:cultlang/builtinbase.git
+[submodule "backendllvm"]
+	path = backendllvm
+	url = git@github.com:cultlang/backend-llvm.git
+[submodule "lsp"]
+	path = lsp
+	url = git@github.com:cultlang/lsp.git
+[submodule "get"]
+	path = get
+	url = git@github.com:cultlang/get.git
+[submodule "semver"]
+	path = semver
+	url = git@github.com:cultlang/semver.git
+[submodule "packager"]
+	path = packager
+	url = git@github.com:cultlang/packager.git
