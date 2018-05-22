@@ -34,3 +34,6 @@
 [submodule "packager"]
 	path = packager
 	url = git@github.com:cultlang/packager.git
+[submodule "mpir"]
+	path = mpir
+	url = git@github.com:cultlang/mpir.git
