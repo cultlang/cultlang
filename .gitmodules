@@ -1,3 +1,15 @@
+[submodule "util"]
+	path = util
+	url = git@github.com:cultlang/craft-util.git
+[submodule "types"]
+	path = types
+	url = git@github.com:cultlang/craft-types.git
+[submodule "lisp"]
+	path = lisp
+	url = git@github.com:cultlang/craft-lisp.git
+[submodule "backendllvm"]
+	path = backendllvm
+	url = git@github.com:cultlang/backend-llvm.git
 [submodule "craft"]
 	path = craft
 	url = git@github.com:cultlang/craft.git
@@ -19,9 +31,6 @@
 [submodule "builtinbase"]
 	path = builtinbase
 	url = git@github.com:cultlang/builtinbase.git
-[submodule "backendllvm"]
-	path = backendllvm
-	url = git@github.com:cultlang/backend-llvm.git
 [submodule "lsp"]
 	path = lsp
 	url = git@github.com:cultlang/lsp.git
@@ -37,3 +46,9 @@
 [submodule "mpir"]
 	path = mpir
 	url = git@github.com:cultlang/mpir.git
+[submodule "git"]
+	path = git
+	url = git@github.com:cultlang/libgit2.git
+[submodule "curses"]
+	path = curses
+	url = git@github.com:cultlang/curses.git
