@@ -4,29 +4,11 @@ This is a metarepo for the Cult programming language.
 
 # Building
 
-Prerequistes:
+This project recently transitioned to using bazel.
 
-* Windows
-  * Visual Studio 2017 15.7.3
-  * cmake
-
-1. Clone this repo (you may not have to clone all the submodules).
-2. Download the Vendor distribution and craftbuild tool (from the releases).
-  * Place the vendor folder somewhere (the root of this repo is fine, the path can be specified on the command line or with the environment variable `CRAFT_ENGINE_VENDOR_DIR`.
-  * Put the build tool somewhere on your path or memorable.
-  * Create a registry file at the root directory (or the default location in your roaming appdata at `AppData\Roaming\craftconfig\craft_build_Config.yaml`):
-```
-registry: !craft/build/PackageHiveRegistry
-  Cultlang: !craft/build/PackageHiveRegistryEntry
-    name: "Cultlang"
-    sources: 'C:\Absolute\Path\To\This\Repo'
-    binaries: 'C:\Absolute\Path\To\This\Repo\dist'
-```
-3. Choose a version to build (by selecting which repo the build will be based on):
-    * Minimal: Sync the following, `util`, `types`, `lisp`. `lisp` is the primary repo we will use.
-    * Minimal-LLVM: Sync the same list as minimal, but include `backendllvm`. `backendllvm` is the primary repo we will use.
-    * Full: Sync all of the submodules. `craft` is the primary repo we will use.
-4. Make a build directory in the primary repo (the name doesn't actually matter).
-5. In the build directory run `craftbuild cmake --registry path/to/registry`
-6. In the build directory run `cmake .. -DCMAKE_GENERATOR_PLATFORM=x64 -DCRAFT_ENGINE_VENDOR_DIR=""`
-7. Open the solution file and build.
+1. Install and configure Bazel
+  * If on Windows [some additional configuration](https://docs.bazel.build/versions/master/windows.html):
+    * `BAZEL_SH` needs to be configured to point at a bash. If one has git for windows installed anyways this can be found at `C:\Program Files\Git\usr\bin\bash.exe`.
+	* `BAZEL_VC` needs to be configured to point at visual studio. For 2017 community this is at `C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC` (Bazel should find this path automatically and report it as a warning if not set).
+2. Open this folder in your command line of choice and run the build command (e.g. `bazel build types:runtime_explorer`) for the given sub project (exectuables are availble under `bazel-bin`, e.g. `./bazel-bin/types/runtime_explorer`):
+  * `types:runtime_explorer`

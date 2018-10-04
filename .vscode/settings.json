@@ -1,0 +1,18 @@
+{
+    "files.exclude": {
+        "bazel-*/": true
+    },
+    "files.associations": {
+        "array": "cpp",
+        "deque": "cpp",
+        "initializer_list": "cpp",
+        "list": "cpp",
+        "regex": "cpp",
+        "vector": "cpp",
+        "xhash": "cpp",
+        "xstring": "cpp",
+        "xtree": "cpp",
+        "xutility": "cpp",
+        "utility": "cpp"
+    }
+}
