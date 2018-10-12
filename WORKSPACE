@@ -37,3 +37,23 @@ new_http_archive(
     sha256 = "535f66321dc2fd8b08593e7d534d74e505118af09f300b3b10072f57ce9903bb",
     build_file = "vendor/spdlog.BUILD",
 )
+
+########################
+# replxx:
+
+new_git_repository(
+    name = "replxx",
+    remote = "https://github.com/cgrinker/replxx.git",
+    commit = "dc548f753cc0c42f36d4a9b3a5fe8c70ecbb5217",
+    build_file = "vendor/replxx.BUILD",
+)
+
+########################
+# tao/pegtl:
+new_http_archive(
+    name = "pegtl",
+    urls = ["https://github.com/taocpp/PEGTL/archive/2.7.1.zip"],
+    strip_prefix = "PEGTL-2.7.1",
+    sha256 = "1fce28859349f00ad7f932e608181eff01c982615f7e853c76055f2644f41cb3",
+    build_file = "vendor/pegtl.BUILD",
+)
