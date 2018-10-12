@@ -52,3 +52,6 @@
 [submodule "curses"]
 	path = curses
 	url = git@github.com:cultlang/curses.git
+[submodule "build_tools"]
+	path = build_tools
+	url = git@github.com:cultlang/bazel-build_tools.git
