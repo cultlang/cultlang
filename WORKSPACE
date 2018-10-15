@@ -77,3 +77,22 @@ new_http_archive(
     urls = ["https://github.com/wmcbrine/PDCurses/archive/3.6.zip"],
     build_file = "vendor/pdcurses.BUILD",
 )
+
+########################
+# sodium:
+new_http_archive(
+    name = "libsodium",
+    strip_prefix="libsodium-1.0.16-msvc",
+    sha256 = "3224efd9b77ae6cbeed6b0f77894b4043fc6927e78dbcfbcbec28377332def20",
+    urls = ["https://github.com/cultlang/sodium/releases/download/v0.0.0/libsodium-1.0.16-msvc.zip"],
+    build_file = "vendor/libsodium.BUILD",
+)
+
+######################## 
+new_http_archive(
+    name = "libgit2",
+    strip_prefix="git2",
+    sha256="73fb6ac0d4751b912a77d2b0669aea2f48990ab284d180c1f733bf722623a15e",
+    urls = ["https://github.com/cultlang/libgit2/releases/download/v0.0.0/git2-x86_64-pc-windows-msvccoff.zip"],
+    build_file = "vendor/libgit2.BUILD",
+)
