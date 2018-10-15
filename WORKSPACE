@@ -67,3 +67,13 @@ new_http_archive(
     #sha256 = "1fce28859349f00ad7f932e608181eff01c982615f7e853c76055f2644f41cb3",
     build_file = "vendor/sqlite.BUILD",
 )
+
+########################
+# pdcurses:
+
+new_http_archive(
+    name = "pdcurses",
+    strip_prefix = "PDCurses-3.6",
+    urls = ["https://github.com/wmcbrine/PDCurses/archive/3.6.zip"],
+    build_file = "vendor/pdcurses.BUILD",
+)
