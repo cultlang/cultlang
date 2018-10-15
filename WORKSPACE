@@ -88,7 +88,8 @@ new_http_archive(
     build_file = "vendor/libsodium.BUILD",
 )
 
-######################## 
+########################
+# libgit2:
 new_http_archive(
     name = "libgit2",
     strip_prefix="git2",
@@ -96,3 +97,15 @@ new_http_archive(
     urls = ["https://github.com/cultlang/libgit2/releases/download/v0.0.0/git2-x86_64-pc-windows-msvccoff.zip"],
     build_file = "vendor/libgit2.BUILD",
 )
+
+########################
+# libuv:
+new_http_archive(
+    name = "libuv",
+    strip_prefix="uv",
+    sha256="76365509c59923954a01beb6fb3d11d190e157ea92d0254689fae719aafd6890",
+    urls = ["https://github.com/cultlang/uv/releases/download/v0.0.0/uv-x86_64-pc-windows-msvccoff.zip"],
+    build_file = "vendor/libuv.BUILD",
+)
+
+
