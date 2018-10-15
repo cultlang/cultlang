@@ -55,3 +55,6 @@
 [submodule "build_tools"]
 	path = build_tools
 	url = git@github.com:cultlang/bazel-build_tools.git
+[submodule "cultlang_org"]
+	path = cultlang_org
+	url = git@github.com:cultlang/cultlang.github.io-.git

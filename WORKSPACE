@@ -57,3 +57,13 @@ new_http_archive(
     sha256 = "1fce28859349f00ad7f932e608181eff01c982615f7e853c76055f2644f41cb3",
     build_file = "vendor/pegtl.BUILD",
 )
+
+########################
+# sqlite:
+new_http_archive(
+    name = "sqlite",
+    urls = ["https://www.sqlite.org/2018/sqlite-amalgamation-3250200.zip"],
+    strip_prefix = "sqlite-amalgamation-3250200",
+    #sha256 = "1fce28859349f00ad7f932e608181eff01c982615f7e853c76055f2644f41cb3",
+    build_file = "vendor/sqlite.BUILD",
+)
