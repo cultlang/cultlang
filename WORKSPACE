@@ -108,4 +108,24 @@ new_http_archive(
     build_file = "vendor/libuv.BUILD",
 )
 
+########################
+# llvm:
+new_http_archive(
+    name = "llvm",
+    strip_prefix="llvm",
+    sha256="17e00a3ebeefc8730edae288bdcd774091f2e89405d80ed5bf4a9b3db834ddd5",
+    urls = ["https://github.com/cultlang/backend-llvm/releases/download/v0.0.0/llvm-x86_64-pc-windows-msvccoff.zip"],
+    build_file = "vendor/llvm.BUILD",
+)
+
+########################
+# glfw:
+new_http_archive(
+    name = "glfw",
+    strip_prefix="glfw-3.2.1.bin.WIN64",
+    #sha256="17e00a3ebeefc8730edae288bdcd774091f2e89405d80ed5bf4a9b3db834ddd5",
+    urls = ["https://github.com/glfw/glfw/releases/download/3.2.1/glfw-3.2.1.bin.WIN64.zip"],
+    build_file = "vendor/glfw.BUILD",
+)
+
 

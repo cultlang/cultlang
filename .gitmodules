@@ -58,3 +58,6 @@
 [submodule "cultlang_org"]
 	path = cultlang_org
 	url = git@github.com:cultlang/cultlang.github.io-.git
+[submodule "glfw"]
+	path = glfw
+	url = https://github.com/cultlang/glfw.git
