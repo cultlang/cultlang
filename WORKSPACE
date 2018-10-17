@@ -128,4 +128,25 @@ new_http_archive(
     build_file = "vendor/glfw.BUILD",
 )
 
+########################
+# skia:
+new_http_archive(
+    name = "skia",
+    strip_prefix="skia",
+    sha256="b0f7a87ea0a6230e08d5d1e6a8bd05b90b6cdb93aa9c25cd9e633dd8f979ac03",
+    urls = ["https://github.com/cultlang/skia/releases/download/v0.0.0/skia-x86_64-pc-windows-msvccoff.zip"],
+    build_file = "vendor/skia.BUILD",
+)
+
+########################
+# glm:
+new_http_archive(
+    name = "glm",
+    strip_prefix="glm",
+    sha256="209b5943d393925e1a6ecb6734e7507b8f6add25e72a605b25d0d0d382e64fd4",
+    urls = ["https://github.com/g-truc/glm/releases/download/0.9.9.2/glm-0.9.9.2.zip"],
+    build_file = "vendor/glm.BUILD",
+)
+
+
 

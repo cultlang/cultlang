@@ -61,3 +61,6 @@
 [submodule "glfw"]
 	path = glfw
 	url = https://github.com/cultlang/glfw.git
+[submodule "draw"]
+	path = draw
+	url = git@github.com:cultlang/draw.git
