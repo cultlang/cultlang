@@ -3,7 +3,15 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/bazel-cultlang/external/boost",
+                "${workspaceFolder}/bazel-cultlang/external/glm/glm",
+                "${workspaceFolder}/bazel-cultlang/external/skia/include",
+                "${workspaceFolder}/bazel-cultlang/external/replxx/include",
+                "${workspaceFolder}/bazel-cultlang/external/pegtl/include",
+                "${workspaceFolder}/bazel-cultlang/external/llvm/include",
+                "${workspaceFolder}/bazel-cultlang/external/yoga/yoga",
+                "${workspaceFolder}/bazel-cultlang/external/spdlog/include"
             ],
             "defines": [
                 "_DEBUG",

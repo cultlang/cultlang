@@ -64,3 +64,6 @@
 [submodule "draw"]
 	path = draw
 	url = git@github.com:cultlang/draw.git
+[submodule "yoga"]
+	path = yoga
+	url = git@github.com:cultlang/yoga.git

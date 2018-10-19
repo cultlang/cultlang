@@ -148,5 +148,16 @@ new_http_archive(
     build_file = "vendor/glm.BUILD",
 )
 
+########################
+# yoga:
+## TODO Checkout to this git commit:2c61217527d38a1e8f172369e5064e1b200d69b0e68f9a0807c97e5693807d55
+new_http_archive(
+    name = "yoga",
+    strip_prefix="yoga-master",
+    sha256="2c61217527d38a1e8f172369e5064e1b200d69b0e68f9a0807c97e5693807d55",
+    urls = ["https://github.com/facebook/yoga/archive/master.zip"],
+    build_file = "vendor/yoga.BUILD",
+)
+
 
 
