@@ -11,59 +11,59 @@
 	path = backendllvm
 	url = git@github.com:cultlang/backend-llvm.git
 [submodule "craft"]
-	path = craft
+	path = extensions/craft
 	url = git@github.com:cultlang/craft.git
 [submodule "sqlite3"]
-	path = sqlite3
+	path = extensions/sqlite3
 	url = git@github.com:cultlang/sqlite3.git
 [submodule "uv"]
-	path = uv
+	path = extensions/uv
 	url = git@github.com:cultlang/uv.git
 [submodule "zmq"]
-	path = zmq
+	path = extensions/zmq
 	url = git@github.com:cultlang/zmq.git
 [submodule "sodium"]
-	path = sodium
+	path = extensions/sodium
 	url = git@github.com:cultlang/sodium.git
 [submodule "http"]
-	path = http
+	path = extensions/http
 	url = git@github.com:cultlang/http.git
 [submodule "builtinbase"]
 	path = builtinbase
 	url = git@github.com:cultlang/builtinbase.git
 [submodule "lsp"]
-	path = lsp
+	path = extensions/lsp
 	url = git@github.com:cultlang/lsp.git
 [submodule "get"]
-	path = get
+	path = extensions/get
 	url = git@github.com:cultlang/get.git
 [submodule "semver"]
-	path = semver
+	path = extensions/semver
 	url = git@github.com:cultlang/semver.git
 [submodule "packager"]
-	path = packager
+	path = extensions/packager
 	url = git@github.com:cultlang/packager.git
 [submodule "mpir"]
-	path = mpir
+	path = extensions/mpir
 	url = git@github.com:cultlang/mpir.git
 [submodule "git"]
-	path = git
+	path = extensions/git
 	url = git@github.com:cultlang/libgit2.git
 [submodule "curses"]
-	path = curses
+	path = extensions/curses
 	url = git@github.com:cultlang/curses.git
 [submodule "build_tools"]
 	path = build_tools
 	url = git@github.com:cultlang/bazel-build_tools.git
 [submodule "cultlang_org"]
-	path = cultlang_org
+	path = web/cultlang_org
 	url = git@github.com:cultlang/cultlang.github.io-.git
 [submodule "glfw"]
-	path = glfw
+	path = extensions/glfw
 	url = https://github.com/cultlang/glfw.git
 [submodule "draw"]
-	path = draw
+	path = extensions/draw
 	url = git@github.com:cultlang/draw.git
 [submodule "yoga"]
-	path = yoga
+	path = extensions/yoga
 	url = git@github.com:cultlang/yoga.git
