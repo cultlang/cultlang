@@ -3,7 +3,11 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**",
+                "${workspaceFolder}/util/**",
+                "${workspaceFolder}/types/**",
+                "${workspaceFolder}/lisp/**",
+                "${workspaceFolder}/backendllvm/**",
+                "${workspaceFolder}/extensions/**",
                 "${workspaceFolder}/bazel-cultlang/external/boost",
                 "${workspaceFolder}/bazel-cultlang/external/glm/glm",
                 "${workspaceFolder}/bazel-cultlang/external/skia/include",
