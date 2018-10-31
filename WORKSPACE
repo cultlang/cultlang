@@ -108,15 +108,16 @@ new_http_archive(
     build_file = "vendor/libuv.BUILD",
 )
 
-########################
-# llvm:
+#######################
+#llvm:
 new_http_archive(
     name = "llvm",
     strip_prefix="llvm",
-    sha256="17e00a3ebeefc8730edae288bdcd774091f2e89405d80ed5bf4a9b3db834ddd5",
-    urls = ["https://github.com/cultlang/backend-llvm/releases/download/v0.0.0/llvm-x86_64-pc-windows-msvccoff.zip"],
+    sha256="ecf047ebb17f672d790ef005c0f568ab0ea3a856deecdf0d2c38d79d4fd9b993",
+    urls = ["https://github.com/cultlang/backend-llvm/releases/download/v0.1.0/llvm-x86_64-pc-windows-msvc.zip"],
     build_file = "vendor/llvm.BUILD",
 )
+
 
 ########################
 # glfw:
