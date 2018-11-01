@@ -108,16 +108,15 @@ new_http_archive(
     build_file = "vendor/libuv.BUILD",
 )
 
-#######################
+######################
 #llvm:
 new_http_archive(
     name = "llvm",
     strip_prefix="llvm",
-    sha256="ecf047ebb17f672d790ef005c0f568ab0ea3a856deecdf0d2c38d79d4fd9b993",
-    urls = ["https://github.com/cultlang/backend-llvm/releases/download/v0.1.0/llvm-x86_64-pc-windows-msvc.zip"],
+    sha256="ca813f6275bc8f865b0545b75551694e6203021ad27be75456dfa20e81dcdd2f",
+    urls = ["https://github.com/cultlang/backend-llvm/releases/download/llvm-8-stable-0/llvm-x86_64-pc-windows-msvc.zip"],
     build_file = "vendor/llvm.BUILD",
 )
-
 
 ########################
 # glfw:
@@ -159,6 +158,8 @@ new_http_archive(
     urls = ["https://github.com/facebook/yoga/archive/master.zip"],
     build_file = "vendor/yoga.BUILD",
 )
+
+
 
 
 
