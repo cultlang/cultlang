@@ -76,6 +76,9 @@
         "cctype": "cpp",
         "cinttypes": "cpp",
         "codecvt": "cpp",
-        "numeric": "cpp"
+        "numeric": "cpp",
+        "filesystem": "cpp",
+        "iomanip": "cpp",
+        "string_view": "cpp"
     }
 }
