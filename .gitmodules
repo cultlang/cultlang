@@ -67,3 +67,6 @@
 [submodule "yoga"]
 	path = extensions/yoga
 	url = git@github.com:cultlang/yoga.git
+[submodule "extensions/glm"]
+	path = extensions/glm
+	url = git@github.com:cultlang/glm.git
