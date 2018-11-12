@@ -2,7 +2,8 @@ cc_library(
     name = "replxx",
     visibility = ["//visibility:public"],
     hdrs = glob([
-        "src/**/*.h*"
+        "include/**/*.h*",
+        "src/**/*.h*",
     ]),
     srcs = glob([
         "src/**/*.c*",
