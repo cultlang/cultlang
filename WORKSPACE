@@ -111,7 +111,7 @@ new_http_archive(
 ######################
 #llvm:
 new_http_archive(
-    name = "llvm",
+    name = "llvm_windows",
     strip_prefix="llvm",
     sha256="ca813f6275bc8f865b0545b75551694e6203021ad27be75456dfa20e81dcdd2f",
     urls = ["https://github.com/cultlang/backend-llvm/releases/download/llvm-8-stable-0/llvm-x86_64-pc-windows-msvc.zip"],
