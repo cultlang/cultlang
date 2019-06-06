@@ -5,10 +5,21 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(Windows) Launch",
+            "name": "cult",
             "type": "cppvsdbg",
             "request": "launch",
             "program": "${workspaceFolder}/bazel-bin/lisp/cult.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true
+        },
+        {
+            "name": "runtime-explorer",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/bazel-bin/types/runtime_explorer.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

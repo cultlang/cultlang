@@ -11,6 +11,7 @@ load("@bazel_tools//tools/build_defs/repo:git.bzl", "new_git_repository")
 git_repository(
     name = "com_github_nelhage_rules_boost",
     commit = "6d6fd834281cb8f8e758dd9ad76df86304bf1869",
+    shallow_since = "1543903644 -0800",
     remote = "https://github.com/nelhage/rules_boost",
 )
 
@@ -24,11 +25,22 @@ http_archive(
    name = "rules_foreign_cc",
    strip_prefix = "rules_foreign_cc-master",
    url = "https://github.com/bazelbuild/rules_foreign_cc/archive/master.zip",
+   sha256 = "2ead6e455a7db20915936464f5e8565679e9830c6eec0f6240b189d4eb2010c4"
 )
 
 load("@rules_foreign_cc//:workspace_definitions.bzl", "rules_foreign_cc_dependencies")
 rules_foreign_cc_dependencies()
 
+########################
+# Catch
+
+http_archive(
+    name = "catch",
+    url = "https://github.com/catchorg/Catch2/archive/v2.7.2.zip",
+    sha256 = "7edd16ed7c9c6725f14e1ae997431a69835a5f9ac1dc90dc8ec1548bd5e0fe02",
+    build_file =  "@//vendor:catch.BUILD",
+    strip_prefix = "Catch2-2.7.2",
+)
 
 ########################
 # spdlog:
@@ -153,7 +165,6 @@ http_archive(
 
 ########################
 # yoga:
-## TODO Checkout to this git commit:2c61217527d38a1e8f172369e5064e1b200d69b0e68f9a0807c97e5693807d55
 http_archive(
     name = "yoga",
     strip_prefix="yoga-master",

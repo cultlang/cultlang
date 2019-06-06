@@ -79,6 +79,8 @@
         "numeric": "cpp",
         "filesystem": "cpp",
         "iomanip": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "cstdarg": "cpp",
+        "unordered_set": "cpp"
     }
 }

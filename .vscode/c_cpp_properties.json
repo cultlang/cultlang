@@ -10,6 +10,7 @@
                 "${workspaceFolder}/extensions/**",
                 "${workspaceFolder}/bazel-cultlang/external/boost",
                 "${workspaceFolder}/bazel-cultlang/external/glm",
+                "${workspaceFolder}/bazel-cultlang/external/catch/single_include",
                 "${workspaceFolder}/bazel-cultlang/external/skia/include",
                 "${workspaceFolder}/bazel-cultlang/external/replxx/include",
                 "${workspaceFolder}/bazel-cultlang/external/pegtl/include",
