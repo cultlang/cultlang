@@ -1,5 +1,5 @@
 cc_library(
-    name = "spdlog",
+    name = "headers",
     visibility = ["//visibility:public"],
     hdrs = glob(["**/*.h*"]),
     includes = ["include"],
